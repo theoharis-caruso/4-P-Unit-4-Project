@@ -8,9 +8,9 @@ Requirements
 Select ONE Additional Feature to Add  
 [ yes ] Feature 1 - Fill Text with Image Background 
 [ yes ] Feature 2 - Change the <li> markers
-[ no ] Feature 3 - Change the Favicon
+[ yes ] Feature 3 - Change the Favicon
 [ yes ] Feature 4 - Use Google Font or Uploaded Font
-[ no ] Feature 5 - Change the Cursor
+[ yes ] Feature 5 - Change the Cursor
 -->
 
 <!DOCTYPE html>
@@ -19,6 +19,7 @@ Select ONE Additional Feature to Add
 <head>
   <title>Unit 4 Project</title>
   <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="Screenshot 2026-11-12 090714.png">
   <style>
     .flip-card {
   background-color: transparent;
@@ -73,6 +74,7 @@ h1{
   background-image: url('https://plus.unsplash.com/premium_vector-1729530255625-dbfe1f15e12b?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D');
   background-clip: text;
 }
+
 h3{
   font-family: "Bungee Tint", sans-serif;
 }
@@ -85,6 +87,11 @@ p{
 li::marker{
   content:"🎀";
   font-size:1.2 em;
+  color:red;
+}
+body{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>☃️</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  background-color: rgb(136, 221, 150);
 }
 </style>
 </head>
@@ -94,11 +101,7 @@ li::marker{
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Diplomata&display=swap" rel="stylesheet">
-<body{
-  padding: 16px;
-  background-color: #000;
-  color: #fff;
-}>
+
 
   <h1>Christmas in NYC</h1>
   
@@ -132,7 +135,7 @@ li::marker{
   <p>One of the newer holiday destinations in Midtown Manhattan, Macy's Holiday Square offers a wide range of handcrafted gifts, artisanal products and festive treats across three city blocks. This open air market by Urbanspace is a must-see destination in the heart of New York City, and features a multitude of vendors from New York and beyond. <br> Some of the best things to get at the Holiday Market are:</p>
   <ul class="font">
     <li>Birria Tacos</li>
-    <li>Hot Chocolates</li>
+    <li>Hot Chocolate</li>
     <li>Cheese wheel pasta</li>
   </ul>
   <br><br>
@@ -149,7 +152,7 @@ li::marker{
     </div>
   </div>
 </div>
-  <p>The holidays in NYC begin at Rockefeller Center. Whether it’s a visit to the iconic Christmas Tree, a skate on the ice at The Rink, cozying up in the Après Skate Chalets, or taking in the skyline from Top of the Rock, there’s holiday magic in every corner. It’s a holiday tradition you’ll want to make your own.</p>
+  <p>The holidays in NYC begin at Rockefeller Center. Whether it’s a visit to the iconic Christmas Tree, a skate on the ice at The Rink, cozying up in the Après Skate Chalets there’s holiday magic in every corner. It’s a holiday tradition you’ll want to make your own.</p>
   <br><br>
 
 </body>
